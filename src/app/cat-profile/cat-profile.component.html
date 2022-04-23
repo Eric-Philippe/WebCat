@@ -1,0 +1,48 @@
+<div id="main-container">
+  <div id="main-components">
+    <p id="cat-name">{{ cat.name }}</p>
+    <div class="cat-container">
+      <img id="cat-pic" [src]="cat.imageUrl" [alt]="cat.name" />
+    </div>
+    <div id="tableau-progress">
+      <nav>
+        <ul>
+          <li *ngFor="let info of cat.infos">
+            <div class="element">
+              <div [class]="treats_cat >= info.require ? 'unlocked' : 'locked'">
+                <p>
+                  - {{ info.name }} <br />
+                  ➔ {{ info.require + " treats required" }}
+                  <button
+                    [disabled]="treats_cat < info.require"
+                    (click)="
+                      window.location.href =
+                        '/main?catname=' + cat.name + '&step=' + info.id
+                    "
+                  >
+                    Go
+                  </button>
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div id="progression">
+        <label>Progression </label>
+        <progress
+          [id]="'progress-' + cat.name"
+          [max]="cat.infos.length"
+          [value]="remaining"
+        ></progress>
+        {{ remaining + " / " + cat.infos.length }}
+      </div>
+
+      <div class="feed-btn">
+        <button class="feed" (click)="onTreat()">Feed me</button> x{{
+          treats_cat
+        }}
+      </div>
+    </div>
+  </div>
+</div>

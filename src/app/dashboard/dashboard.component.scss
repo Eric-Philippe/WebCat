@@ -1,0 +1,22 @@
+#cat-container {
+  height: 1300px;
+  background-color: rgb(101, 113, 111);
+}
+
+#treats-available {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+  padding-top: 10px;
+}
+
+#item-cats {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 20%;
+}
+
+.item {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

@@ -1,0 +1,33 @@
+#background {
+  width: 100%;
+  height: 1000px;
+  background-image: url("../../assets/img/paw_background.jpg");
+  background-position: top left;
+  background-attachment: scroll;
+  opacity: 0.5;
+  animation: mymove 10s infinite;
+  z-index: -1;
+}
+
+#main-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes mymove {
+  25% {
+    background-position: bottom right;
+  }
+
+  50% {
+    background-position: bottom left;
+  }
+
+  75% {
+    background-position: top right;
+  }
+}

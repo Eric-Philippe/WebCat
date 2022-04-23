@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  font-family: Tangerine, Helvetica, sans-serif;
+  margin: 0;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: rgb(56, 56, 56);
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(56, 56, 56);
+  margin: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #ffffff;
+  border: 2px solid #fff;
+  border-radius: 2px;
+}

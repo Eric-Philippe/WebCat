@@ -1,0 +1,164 @@
+#main-container {
+  padding: 0;
+}
+
+#main-components {
+  background-image: url("../../assets/img/paw_background.jpg");
+  float: left;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #4a4a4a;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 75%;
+}
+
+#cat-name {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-left: 60%;
+  margin-top: 5px;
+  color: #4a4a4a;
+}
+
+#cat-pic {
+  float: right;
+  display: inline;
+  border-radius: 50px 20px;
+  width: 60%;
+  margin-bottom: 5px;
+  margin-right: 8px;
+  margin-top: 8px;
+  transition: transform 1s;
+}
+
+#cat-pic:hover {
+  transform: scale(1.05);
+}
+
+#tableau-progress {
+  padding: 1em;
+}
+
+#progression {
+  margin-top: 10px;
+}
+
+nav ul {
+  background-color: #f1f1f1;
+  height: 13em;
+  width: 26.5%;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-left: 1em;
+}
+
+ul::-webkit-scrollbar {
+  border-width: 1px;
+  border-radius: 10px;
+  width: 13px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: rgb(99, 99, 99);
+  margin: 5px;
+  border-radius: 30px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background-color: #b3b3b3;
+  border-radius: 5px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background-color: #b3b3b3;
+}
+
+ul::-webkit-scrollbar-thumb:active {
+  background-color: #4a4a4a;
+}
+
+li {
+  list-style-type: none;
+}
+
+.element {
+  button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 00.7em;
+  }
+  p {
+    margin-top: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+  }
+
+  .locked {
+    color: rgb(135, 135, 135);
+
+    button {
+      opacity: 0.3;
+    }
+  }
+
+  .unlocked {
+    color: rgb(0, 0, 0);
+  }
+}
+
+#progression {
+  background: linear-gradient(
+    to bottom right,
+    rgb(255, 255, 255),
+    rgb(226, 226, 226)
+  );
+  width: 35%;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.7em;
+}
+
+label {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1em;
+  padding-left: 5px;
+}
+
+progress {
+  accent-color: #796752;
+  width: 45%;
+}
+
+.feed-btn {
+  margin-top: 1em;
+  margin-left: 12%;
+  margin-right: auto;
+  display: block;
+  width: 80%;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 0.8em;
+
+  button {
+    width: 15%;
+    background-color: rgb(255, 246, 209);
+    color: rgb(66, 66, 65);
+    border-style: solid;
+    border-color: antiquewhite;
+    border-radius: 30px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  button:hover {
+    background-color: rgb(55, 55, 55);
+    color: rgb(255, 250, 227);
+  }
+}

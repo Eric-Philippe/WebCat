@@ -1,0 +1,46 @@
+<div id="main-container">
+  <img class="bg" src="../../assets/img/background.jpg" alt="CatBackground" />
+  <div id="header">
+    <div id="icone">
+      <img class="ico" src="../../assets/ico/Webcat.ico" />
+    </div>
+    <div id="title">
+      <p class="title">Webcat, une histoire de chat ~</p>
+    </div>
+    <app-header></app-header>
+    <div class="arrow-bottom">
+      <a href="javascript: document.body.scrollIntoView(false);">
+        <div id="floating">
+          <p><i class="arrow down"></i></p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="second-container">
+    <div id="intro">
+      <p>
+        Bienvenue dans ce Webdocumentaire sur les chats ! Lorem ipsum dolor sit
+        amet, consectetur adipisicing elit. Provident nulla quas possimus.
+        Praesentium maiores, impedit aspernatur accusantium fugiat facilis autem
+        placeat optio eligendi eaque ipsam veniam sequi iusto, ratione
+        voluptatem.
+      </p>
+    </div>
+    <div id="available">
+      <p>{{ available }} friandises(s) disponible(s)</p>
+    </div>
+    <div id="available-text">
+      <p>Donner des friandises aux chats pour découvrir leurs descriptions !</p>
+    </div>
+    <div id="cats">
+      <div id="item-mimi"><app-card [card]="mimi"></app-card></div>
+      <div id="item-newt"><app-card [card]="newt"></app-card></div>
+      <div id="item-neelix"><app-card [card]="neelix"></app-card></div>
+    </div>
+    <div id="dashboard">
+      <button id="dashboard-button" onclick="window.location.href='/dashboard'">
+        Commencer l'aventure !
+      </button>
+    </div>
+  </div>
+</div>
