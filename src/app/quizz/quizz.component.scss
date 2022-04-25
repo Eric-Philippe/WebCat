@@ -18,6 +18,11 @@
   align-items: center;
 }
 
+app-header {
+  position: fixed;
+  right: 300px;
+}
+
 #welcome-container {
   width: 90%;
   display: flex;
