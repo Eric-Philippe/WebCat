@@ -1,8 +1,8 @@
 export const MimiLinks = [
   {
-    name: 'Intro',
-    content: 'This is the first element',
-    require: 2,
+    name: 'Introduction Mimi',
+    content: 'Les spécialités de Mimi',
+    require: 1,
     id: '0001',
     quizz: true,
   },
@@ -59,9 +59,9 @@ export const MimiLinks = [
 
 export const NewtLinks = [
   {
-    name: 'Intro',
-    content: 'This is the first element',
-    require: 2,
+    name: 'Introduction Newt',
+    content: 'Les spécialités de Newt',
+    require: 1,
     id: '0001',
     quizz: false,
   },
@@ -69,9 +69,9 @@ export const NewtLinks = [
 
 export const NeelixLinks = [
   {
-    name: 'Intro',
-    content: 'This is the first element',
-    require: 2,
+    name: 'Introduction Neelix',
+    content: 'Les spécialités de Neelix',
+    require: 1,
     id: '0001',
     quizz: false,
   },

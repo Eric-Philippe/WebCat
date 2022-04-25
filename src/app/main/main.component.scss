@@ -4,18 +4,30 @@
   background-image: url("../../assets/img/paw_background.jpg");
   background-position: top left;
   background-attachment: scroll;
-  opacity: 0.5;
   animation: mymove 10s infinite;
   z-index: -1;
 }
 
 #main-container {
-  width: 100%;
-  height: 100%;
+  // Center all the child one above the other
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  background-color: beige;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: 1px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 @keyframes mymove {
