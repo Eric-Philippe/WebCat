@@ -65,30 +65,6 @@ export class QuizzComponent implements OnInit {
     location.reload();
   }
 
-  unclickCheckBox(event: Event): void {
-    let target = event.target as HTMLInputElement;
-    var inputs = document.getElementsByTagName('input');
-    for (var i = 0; i < inputs.length; i++) {
-      if (
-        inputs[i].type == 'checkbox' &&
-        inputs[i].getAttribute('id') != target.getAttribute('id')
-      ) {
-        inputs[i].checked = false;
-      }
-    }
-  }
-
-  getCheckedBox(): string | null {
-    var inputs = document.getElementsByTagName('input');
-    for (var i = 0; i < inputs.length; i++) {
-      if (inputs[i].type == 'checkbox' && inputs[i].checked) {
-        return inputs[i].value!;
-      }
-    }
-
-    return null;
-  }
-
   next(): void {
     console.log('cc');
     let coeff = this.getCheckedBox();
@@ -103,6 +79,30 @@ export class QuizzComponent implements OnInit {
     this.question = QUESTIONS[this.index];
     this.title = this.question.title;
     this.answers = this.question.answers;
+  }
+
+  getCheckedBox(): string | null {
+    var inputs = document.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+      if (inputs[i].type == 'checkbox' && inputs[i].checked) {
+        return inputs[i].value!;
+      }
+    }
+
+    return null;
+  }
+
+  unclickCheckBox(event: Event): void {
+    let target = event.target as HTMLInputElement;
+    var inputs = document.getElementsByTagName('input');
+    for (var i = 0; i < inputs.length; i++) {
+      if (
+        inputs[i].type == 'checkbox' &&
+        inputs[i].getAttribute('id') != target.getAttribute('id')
+      ) {
+        inputs[i].checked = false;
+      }
+    }
   }
 
   stringToIntArray(str: string): number[] {

@@ -38,6 +38,11 @@ p.title {
   z-index: -1;
 }
 
+app-header {
+  position: fixed;
+  right: 300px;
+}
+
 .arrow-bottom {
   position: fixed;
   top: 85%;
