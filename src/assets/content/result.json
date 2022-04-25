@@ -1,0 +1,24 @@
+{
+  "RESULT": [
+    {
+      "name": "Vous êtes Mimi !",
+      "content": "Mithrandir, Prince de la maison, majestueux félin à la robe grise et blanche. \r\n\r\n Vous êtes un chasseur dans l’âme, mouches, plantes comestibles ou non, les mains des humains, vos copains… tout y passe. \r\n\r\n Vous adorez grimper le plus haut possible pour garder un œil sur votre domaine. Mais aucun bipède ne résiste à vos ronronnements et coups de tête affectueux : on ne peut rien vous refuser, et certainement pas ce petit bout de steak. Oui, vous prendrez des gratouilles derrière les oreilles avec ça, merci.",
+      "url": "../../assets/img/mimi.quizz.png"
+    },
+    {
+      "name": "Vous êtes Newt !",
+      "content": "La petite patate beige… Quand quelque chose ne va pas, vous le dites. Quand quelque chose va, vous le dites. Quand vous avez faim, quand vous vous ennuyez, quand vous avez envie qu’on vous ouvre une porte, quand vous avez réduit votre carton favori en lambeaux… Vous avez de la voix et savez en donner. \r\n\r\n  C’est qu’il faut bien apprendre aux bipèdes comment vous servir correctement ; on voit le fond de la gamelle, là, c’est pas ces quatre croquettes qui vont vous rassasier, surtout après cette longue sieste en compagnie des copains. \r\n\r\n C’est tellement fatigant, d’être un chat.",
+      "url": "../../assets/img/newt.quizz.png"
+    },
+    {
+      "name": "Vous êtes Neelix !",
+      "content": "Le monde est plein de dangers, et vous n’allez pas risquer de perdre une moustache ou d’abîmer votre robe brune juste par goût de l’aventure, merci bien. \r\n\r\n  Vous préférez le confort de vos coussins, et la sécurité du dessous du canapé, et les oiseaux ne sont jamais aussi intéressants que de loin, derrière une fenêtre bien fermée. \r\n\r\n  De toute façon, vous avez bien dressé votre majordome, qui vous apporte votre saumon dans vos quartiers et ne repart jamais sans avoir joué avec vous.",
+      "url": "../../assets/img/neelix.quizz.png"
+    },
+    {
+      "name": "Vous n'êtes pas un chat !",
+      "content": "On vous a repéré, à essayer d’infiltrer le Royaume des Chats ! Heureusement que la Cat Police est là pour nous protéger. \r\n\r\n  A moins que vous ne fassiez partie de nos alliés… C’est des friandises que vous avez dans votre poche ? Et si vous nous en donniez quelques unes ?",
+      "url": "../../assets/img/cat-police.png"
+    }
+  ]
+}

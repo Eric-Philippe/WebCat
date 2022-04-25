@@ -13,6 +13,11 @@ import { Mimi, Newt, Neelix } from '../../assets/Cats';
 })
 export class HomeComponent implements OnInit {
   constructor(private cookieService: CookieService) {}
+  heads = [
+    { name: 'accueil', path: '/' },
+    { name: 'us', path: '/us' },
+  ];
+
   mimi!: Card;
   newt!: Card;
   neelix!: Card;

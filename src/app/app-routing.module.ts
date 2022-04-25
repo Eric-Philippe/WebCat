@@ -4,8 +4,10 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HomeComponent } from './home/home.component';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { MainComponent } from './main/main.component';
+import { QuizzComponent } from './quizz/quizz.component';
 
 const routes: Routes = [
+  { path: 'quizz', component: QuizzComponent },
   { path: 'main', component: MainComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'home', component: HomeComponent },

@@ -1,5 +1,7 @@
-<ul>
-  <li><a>WebDoc</a></li>
-  <li><a href="/">Accueil</a></li>
-  <li><a href="/us">Nous</a></li>
-</ul>
+<div id="header-container">
+  <ul>
+    <li *ngFor="let head of heads">
+      <a [href]="head.path"> {{ head.name }} </a>
+    </li>
+  </ul>
+</div>

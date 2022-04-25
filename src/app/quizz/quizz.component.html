@@ -1,0 +1,50 @@
+<div id="background">
+  <app-header [heads]="heads"></app-header>
+  <div id="main-container">
+    <div id="welcome-container">
+      <p id="welcome-text">
+        Vous avez toujours eu envie de vous réincarner en chat de canapé ?
+        <br />
+        Avec ce test très scientifique basé sur les expériences réelles de la
+        vie de nos trois experts, découvrez quel chat se cache vraiment au fond
+        de vous.
+      </p>
+      <button id="welcome-button" (click)="start()">Commencer</button>
+    </div>
+    <div id="quizz-container">
+      <div id="title">{{ title }}</div>
+      <div id="answers">
+        <div *ngFor="let answer of answers">
+          <div [class]="'answer-' + answer.id" id="answer-box">
+            <label class="container">
+              {{ answer.content }}
+              <input
+                [id]="'answer-' + answer.id"
+                type="checkbox"
+                [value]="answer.coeff"
+                (click)="unclickCheckBox($event)"
+              />
+              <span class="checkmark"></span>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div id="next">
+        <button (click)="next()">Prochaine Question</button>
+      </div>
+    </div>
+    <div id="result-container">
+      <div id="result-title">{{ resultTitle }}</div>
+      <div id="last-container">
+        <div id="result-text">{{ resultContent }}</div>
+        <div id="result-img">
+          <img [src]="resultUrl" />
+        </div>
+      </div>
+
+      <div id="restart-button">
+        <button (click)="restart()">Recommencer</button>
+      </div>
+    </div>
+  </div>
+</div>

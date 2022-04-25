@@ -1,0 +1,334 @@
+{
+  "QUESTIONS": [
+    {
+      "title": "Sur votre temps libre, vous préférez : ",
+      "answers": [
+        {
+          "content": "Fixer les oiseaux dans les arbres en rêvant de les croquer",
+          "coeff": [1, 2, 3, 0],
+          "id": "1"
+        },
+        {
+          "content": "Jouer avec votre meilleur ami",
+          "coeff": [2, 0, 3, 2],
+          "id": "2"
+        },
+        {
+          "content": "Chasser une souris en corde",
+          "coeff": [3, 2, 2, 0],
+          "id": "3"
+        },
+        {
+          "content": "Regarder la télé",
+          "coeff": [0, 2, 0, 3],
+          "id": "4"
+        },
+        {
+          "content": "Juger les gens qui vous entourent",
+          "coeff": [3, 1, 0, 2],
+          "id": "5"
+        },
+        {
+          "content": "Faire du sport",
+          "coeff": [3, 0, 2, 3],
+          "id": "6"
+        },
+        {
+          "content": "Détruire un carton",
+          "coeff": [1, 3, 0, 0],
+          "id": "7"
+        }
+      ]
+    },
+    {
+      "title": "Vous vous ennuyez et votre bipède préféré est occupé. Comment attirez-vous son attention ?",
+      "answers": [
+        {
+          "content": "Vous lui proposez une partie de jeu vidéo",
+          "coeff": [0, 0, 0, 3],
+          "id": "1"
+        },
+        {
+          "content": "Vous miaulez jusqu’à ce qu’il réagisse",
+          "coeff": [1, 3, 2, 0],
+          "id": "2"
+        },
+        {
+          "content": "Vous courez partout et sautez sur le canapé, la table basse, ses genoux",
+          "coeff": [0, 0, 3, 0],
+          "id": "3"
+        },
+        {
+          "content": "Vous vous immiscez en ronronnant, quitte à vous asseoir sur un livre ou un clavier",
+          "coeff": [3, 0, 2, 0],
+          "id": "4"
+        },
+        {
+          "content": "Vous allez chercher un jouet et lui amenez",
+          "coeff": [3, 0, 1, 2],
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "title": "Un bipède inconnu a été introduit chez vous. Comment réagissez-vous ?",
+      "answers": [
+        {
+          "content": "Vous courez vous cacher sous un meuble jusqu’à ce qu’il quitte les lieux",
+          "coeff": [1, 1, 3, 0],
+          "id": "1"
+        },
+        {
+          "content": "Vous vous asseyez pour l’observer de loin, en maintenant toujours trois bons mètres de distance",
+          "coeff": [1, 3, 0, 1],
+          "id": "2"
+        },
+        {
+          "content": "Vous lui jetez un regard froid et attendez qu’il propose quelque chose d’intéressant : gratouilles, genoux confortables…",
+          "coeff": [3, 0, 0, 0],
+          "id": "3"
+        },
+        {
+          "content": "Vous lui offrez à manger",
+          "coeff": [0, 0, 0, 3],
+          "id": "4"
+        }
+      ]
+    },
+    {
+      "title": "Dîner à la carte. Votre choix ?",
+      "answers": [
+        {
+          "content": "Steak saignant",
+          "coeff": [3, 0, 3, 1],
+          "id": "1"
+        },
+        {
+          "content": "Poulet rôti",
+          "coeff": [1, 3, 1, 1],
+          "id": "2"
+        },
+        {
+          "content": "Sashimi de saumon",
+          "coeff": [2, 0, 3, 1],
+          "id": "3"
+        },
+        {
+          "content": "Quelques grains de raisin",
+          "coeff": [0, 0, 0, 1],
+          "id": "4"
+        },
+        {
+          "content": "Sandwich au jambon",
+          "coeff": [0, 2, 0, 1],
+          "id": "5"
+        },
+        {
+          "content": "Potage de cresson",
+          "coeff": [2, 0, 0, 1],
+          "id": "6"
+        }
+      ]
+    },
+    {
+      "title": "Vous approchez du balcon, terra incognita ; la porte-fenêtre est restée ouverte. Que faites-vous ?",
+      "answers": [
+        {
+          "content": "Vous vous faufilez dehors, prenez peur, miaulez pour qu’on vienne vous chercher",
+          "coeff": [0, 3, 0, 0],
+          "id": "1"
+        },
+        {
+          "content": "Vous vous asseyez devant la porte et observez ce monde nouveau sans pour autant y mettre une patte",
+          "coeff": [3, 0, 0, 0],
+          "id": "2"
+        },
+        {
+          "content": "Vous courez dans la direction opposée pour vous cacher – trop dangereux cette histoire",
+          "coeff": [0, 0, 3, 0],
+          "id": "3"
+        },
+        {
+          "content": "Vous complimentez les bipèdes sur leurs plantes",
+          "coeff": [0, 0, 0, 3],
+          "id": "4"
+        },
+        {
+          "content": "Vous goûtez les plantes",
+          "coeff": [3, 2, 0, 0],
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "title": "Votre endroit de prédilection pour une bonne sieste :",
+      "answers": [
+        {
+          "content": "Les jambes de votre bipède, de préférence avec une couverture",
+          "coeff": [3, 0, 2, 0],
+          "id": "1"
+        },
+        {
+          "content": "La table de la salle à manger, au délicieux goût d’interdit",
+          "coeff": [0, 3, 0, 0],
+          "id": "2"
+        },
+        {
+          "content": "Le sommet de l’arbre à chat, au soleil",
+          "coeff": [3, 3, 3, 0],
+          "id": "3"
+        },
+        {
+          "content": "N’importe quel coussin moelleux",
+          "coeff": [1, 2, 3, 1],
+          "id": "4"
+        },
+        {
+          "content": "Une pile de papiers importants, pour les garder au chaud",
+          "coeff": [2, 3, 2, 0],
+          "id": "5"
+        },
+        {
+          "content": "Un lit avec des draps tout doux",
+          "coeff": [1, 1, 1, 2],
+          "id": "6"
+        },
+        {
+          "content": "Le panier de linge qui attend d’être repassé",
+          "coeff": [0, 3, 1, 0],
+          "id": "7"
+        }
+      ]
+    },
+    {
+      "title": "Vous jouez à cache-cache avec les bipèdes, qui sont très mauvais à ce jeu et ne vous trouvent jamais. Où êtes-vous caché ?",
+      "answers": [
+        {
+          "content": "Sous le canapé",
+          "coeff": [3, 0, 2, 0],
+          "id": "1"
+        },
+        {
+          "content": "Dans un recoin derrière le bureau",
+          "coeff": [1, 3, 1, 0],
+          "id": "2"
+        },
+        {
+          "content": "Dans le tiroir à chaussettes",
+          "coeff": [0, 3, 0, 0],
+          "id": "3"
+        },
+        {
+          "content": "Tout en haut de l’armoire",
+          "coeff": [3, 0, 2, 0],
+          "id": "4"
+        },
+        {
+          "content": "Sous l’évier, entre la lessive et le spray d’eau de javel",
+          "coeff": [0, 3, 1, 0],
+          "id": "5"
+        },
+        {
+          "content": "Sous la couette",
+          "coeff": [2, 0, 0, 3],
+          "id": "6"
+        }
+      ]
+    },
+    {
+      "title": "Il est 7h05 et le petit-déjeuner n’est toujours pas servi. Comment réveillez-vous votre majordome bipède ?",
+      "answers": [
+        {
+          "content": "Vous miaulez incessamment",
+          "coeff": [0, 3, 2, 0],
+          "id": "1"
+        },
+        {
+          "content": "Vous sautez sur le lit et marchez dessus de long en large en ronronnant",
+          "coeff": [3, 1, 0, 0],
+          "id": "2"
+        },
+        {
+          "content": "Vous poussez et trainez votre gamelle en faisant le plus de bruit possible",
+          "coeff": [1, 1, 2, 0],
+          "id": "3"
+        },
+        {
+          "content": "Vous allez vous servir directement dans le placard",
+          "coeff": [3, 0, 0, 2],
+          "id": "4"
+        },
+        {
+          "content": "Vous vous passez de petit-déjeuner",
+          "coeff": [0, 0, 0, 1],
+          "id": "5"
+        }
+      ]
+    },
+    {
+      "title": "Si vous deviez aller travailler, quelle carrière choisiriez-vous ?",
+      "answers": [
+        {
+          "content": "Empereur des chats, pour diriger le monde d’une patte de fer",
+          "coeff": [3, 1, 1, 0],
+          "id": "1"
+        },
+        {
+          "content": "Agent de la Cat Police, pour faire régner l’ordre et le respect envers les chats",
+          "coeff": [1, 3, 1, 3],
+          "id": "2"
+        },
+        {
+          "content": "Investisseur cat-pitaliste, pour accumuler les boites de pâtées",
+          "coeff": [1, 3, 3, 0],
+          "id": "3"
+        },
+        {
+          "content": "Vendeur chez Cat-storama pour l’accès illimité aux cartons d’emballage",
+          "coeff": [2, 3, 3, 0],
+          "id": "4"
+        },
+        {
+          "content": "Chef de rayon chez chat-rdiland pour goûter toute l’herbe à chats et vous faire des copains poissons",
+          "coeff": [3, 1, 1, 0],
+          "id": "5"
+        },
+        {
+          "content": "Secrétaire pour piétiner des claviers toute la journée",
+          "coeff": [3, 0, 2, 0],
+          "id": "6"
+        },
+        {
+          "content": "Testeur de matelas chez Dunlopillo",
+          "coeff": [1, 2, 3, 1],
+          "id": "7"
+        }
+      ]
+    },
+    {
+      "title": "Préférez-vous les chats",
+      "answers": [
+        {
+          "content": "Rayé Gris et blanc aux yeux verts",
+          "coeff": [0, 0, 0, 0],
+          "id": "1"
+        },
+        {
+          "content": "Beige et crème aux yeux bleus",
+          "coeff": [0, 0, 0, 0],
+          "id": "2"
+        },
+        {
+          "content": "Rayé Bruns et noirs aux yeux verts",
+          "coeff": [0, 0, 0, 0],
+          "id": "3"
+        },
+        {
+          "content": "Peu importe, chaque chat est le plus beau des chats",
+          "coeff": [0, 0, 0, 0],
+          "id": "4"
+        }
+      ]
+    }
+  ]
+}

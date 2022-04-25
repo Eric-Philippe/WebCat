@@ -80,4 +80,8 @@ export class DashboardComponent implements OnInit {
       });
     });
   }
+
+  onClickQuizz() {
+    window.location.href = '/quizz';
+  }
 }

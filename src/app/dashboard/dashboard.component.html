@@ -1,16 +1,24 @@
-<div id="cat-container">
-  <h2 id="treats-available">
-    {{ treats_available }} x friandise(s) disponible(s)
-  </h2>
-  <div id="item-cats">
-    <div class="item">
-      <app-cat-profile [cat]="mimiModel"></app-cat-profile>
+<div id="main-container">
+  <div id="cat-container">
+    <h2 id="treats-available">
+      {{ treats_available }} x friandise(s) disponible(s)
+    </h2>
+    <div id="item-cats">
+      <div class="item">
+        <app-cat-profile [cat]="mimiModel"></app-cat-profile>
+      </div>
+      <div class="item">
+        <app-cat-profile [cat]="newtModel"></app-cat-profile>
+      </div>
+      <div class="item">
+        <app-cat-profile [cat]="neelixModel"></app-cat-profile>
+      </div>
     </div>
-    <div class="item">
-      <app-cat-profile [cat]="newtModel"></app-cat-profile>
-    </div>
-    <div class="item">
-      <app-cat-profile [cat]="neelixModel"></app-cat-profile>
-    </div>
+  </div>
+  <hr />
+  <div id="quizz-box">
+    <button (click)="onClickQuizz()">
+      <img id="img-quizz" src="../../assets/img/quizz.png" alt="" />
+    </button>
   </div>
 </div>

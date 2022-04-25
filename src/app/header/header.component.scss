@@ -1,6 +1,10 @@
+#header-container {
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+}
+
 ul {
-  right: 40%;
-  position: absolute;
   transform: translate(100%, 10%);
   display: flex;
   li {
