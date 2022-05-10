@@ -1,11 +1,8 @@
-import {
-  Component,
-  OnInit,
-  Injectable,
-  Renderer2,
-  RendererFactory2,
-} from '@angular/core';
-import { Content } from 'src/assets/content/interface';
+import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Content, Questions } from 'src/assets/content/interface';
+import { CookieService } from 'ngx-cookie-service';
+
+import { TreatsAvailable } from '../models/treatsAvailable.model';
 
 @Component({
   selector: 'app-main',
@@ -18,11 +15,15 @@ export class MainComponent implements OnInit {
 
   index = 0;
 
-  htmlToAdd = '<div id="container' + this.index + '">Salut</div>';
-
   content!: Content;
+  quizzs!: Questions[];
 
-  constructor(private renderer: Renderer2) {}
+  cookie!: TreatsAvailable;
+
+  constructor(
+    private renderer: Renderer2,
+    private cookieService: CookieService
+  ) {}
 
   async ngOnInit(): Promise<void> {
     // Get the value of the catName and stepID from the href
@@ -31,11 +32,12 @@ export class MainComponent implements OnInit {
     let elements = url.split('=');
     this.stepID = elements[elements.length - 1];
     await this.query_content(this.catName, this.stepID);
-    this.createContainer();
-    this.addText(this.content.text[0]);
-    this.index++;
-    this.createContainer();
-    this.addText(this.content.text[0]);
+    if (this.content.quizz) {
+      await this.query_quizz(this.catName, this.stepID);
+    }
+    this.createContentContainer();
+    this.addText(this.content.text[0], '#container' + this.index);
+    this.createButton();
   }
 
   async query_content(name: string, id: string): Promise<void> {
@@ -53,8 +55,20 @@ export class MainComponent implements OnInit {
     }
   }
 
+  async query_quizz(name: string, id: string): Promise<void> {
+    try {
+      let document = await import(
+        '../../assets/content/' + name.toLowerCase() + '/quizz.' + id + '.json'
+      );
+      console.log(document._);
+      this.quizzs = document._;
+    } catch (e) {
+      console.log(e);
+    }
+  }
+
   // Create a new container in the main-container
-  createContainer(): void {
+  createContentContainer(): void {
     const divContainer = this.renderer.createElement('div');
     this.renderer.setProperty(divContainer, 'id', 'container' + this.index);
     this.renderer.addClass(divContainer, 'container');
@@ -62,10 +76,71 @@ export class MainComponent implements OnInit {
     this.renderer.appendChild(element, divContainer);
   }
 
-  addText(txt: string) {
-    let element = document.querySelector('#container' + this.index);
+  // Create a new container in the main-container for the quizz
+  createQuizzContainer(): void {
+    const divContainer = this.renderer.createElement('div');
+    this.renderer.setProperty(divContainer, 'id', 'quizz');
+    this.renderer.addClass(divContainer, 'container');
+    let element = document.querySelector('#quizz-container');
+    this.renderer.appendChild(element, divContainer);
+  }
+
+  createButton(): void {
+    const divContainer = this.renderer.createElement('div');
+    this.renderer.setProperty(
+      divContainer,
+      'id',
+      'button-out-container' + this.index
+    );
+    let element = document.querySelector('#main-container');
+    this.renderer.appendChild(element, divContainer);
+    const button = this.renderer.createElement('button');
+    this.renderer.setProperty(button, 'id', 'button' + this.index);
+    this.renderer.setProperty(
+      button,
+      'onclick',
+      this.content.quizz
+        ? () => {
+            this.hideElements();
+            this.showElements();
+          }
+        : () => {
+            window.location.href = '/dashboard';
+            this.giveTreats();
+          }
+    );
+    this.renderer.setProperty(
+      button,
+      'innerHTML',
+      this.content.quizz ? 'Quizz' : 'Retour'
+    );
+    this.renderer.addClass(button, 'button');
+    this.renderer.appendChild(divContainer, button);
+  }
+
+  addText(txt: string, elementID: string) {
+    let element = document.querySelector(elementID);
+    console.log(element);
     if (!element) return;
 
     element.innerHTML += txt;
+  }
+
+  hideElements() {
+    let element = document.getElementById('main-container');
+    element!.style.display = 'none';
+  }
+
+  showElements() {
+    document.getElementById('quizz-container')!.style.display = 'block';
+  }
+
+  giveTreats() {
+    if (localStorage.getItem(this.catName + this.stepID) === null) {
+      localStorage.setItem(this.catName + this.stepID, 'VISITED');
+      this.cookie = new TreatsAvailable(this.cookieService);
+      this.cookie.add(2);
+      alert('Vous avez gagné deux friandises !');
+    }
   }
 }

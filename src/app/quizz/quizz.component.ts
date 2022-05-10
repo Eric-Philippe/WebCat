@@ -66,7 +66,6 @@ export class QuizzComponent implements OnInit {
   }
 
   next(): void {
-    console.log('cc');
     let coeff = this.getCheckedBox();
     if (!coeff) return;
     let convertedString = this.stringToIntArray(coeff);

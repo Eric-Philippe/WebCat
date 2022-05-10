@@ -38,6 +38,7 @@ export class HomeComponent implements OnInit {
     this.cookieService.set('treatsMimi', '0');
     this.cookieService.set('treatsNewt', '0');
     this.cookieService.set('treatsNeelix', '0');
+    localStorage.clear();
 
     this.easterEggFound = false;
 

@@ -1,0 +1,24 @@
+<div id="main-container">
+  <div id="quizz-container">
+    <div id="title">{{ quizz.question }}</div>
+    <div id="answers">
+      <div *ngFor="let answer of quizz.answers">
+        <div class="answer-" id="answer-box">
+          <label class="container">
+            {{ answer }}
+            <input
+              [id]="'answer-'"
+              type="checkbox"
+              [value]="answer === quizz.answers[quizz.correct] ? 1 : 0"
+              (click)="unclickCheckBox($event)"
+            />
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div id="validate-button">
+      <button (click)="onValidate()">Valider</button>
+    </div>
+  </div>
+</div>

@@ -15,6 +15,4 @@ export class CatModel {
     public remaining: number,
     public infos: Infos[]
   ) {}
-
-  getCat() {}
 }

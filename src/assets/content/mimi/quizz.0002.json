@@ -1,1 +1,9 @@
-{}
+{
+  "_": [
+    {
+      "question": "Ca va ?",
+      "answers": ["Oui", "Non", "Je sais pas trop"],
+      "correct": 0
+    }
+  ]
+}

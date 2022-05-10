@@ -13,6 +13,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CatProfileComponent } from './cat-profile/cat-profile.component';
 import { MainComponent } from './main/main.component';
 import { QuizzComponent } from './quizz/quizz.component';
+import { MainQuizzComponent } from './main-quizz/main-quizz.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { QuizzComponent } from './quizz/quizz.component';
     CatProfileComponent,
     MainComponent,
     QuizzComponent,
+    MainQuizzComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [CookieService],
