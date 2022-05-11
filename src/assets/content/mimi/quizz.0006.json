@@ -1,0 +1,27 @@
+{
+  "_": [
+    {
+      "question": "Combien de chatons un couple de chats peut-il avoir en 4 ans ?",
+      "answers": ["120", "20 000", "30 000 000"],
+      "correct": 1
+    },
+    {
+      "question": "Qui se propose de stériliser les chats des rues ?",
+      "answers": [
+        "Les associations",
+        "Le gouvernement",
+        "Les gens qui n’aiment pas les chatons"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "C’est quoi un chat libre ?",
+      "answers": [
+        "Un chat de la rue qui a été identifié au nom d’une association et ne peut pas être euthanasié",
+        "Un chat qui se croit au-dessus des lois et fait ce qu’il veut",
+        "Un chat qui a gardé sa liberté de penser"
+      ],
+      "correct": 0
+    }
+  ]
+}

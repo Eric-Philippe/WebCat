@@ -1,0 +1,22 @@
+{
+  "_": [
+    {
+      "question": "Que cherche à faire un chat qui se frotte à votre main ?",
+      "answers": [
+        "Vous marquer avec son odeur",
+        "Manger un doigt car il a faim",
+        "Essayer de vous faire faire quelque chose pour lui"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Votre chat vous regarde en clignant lentement des yeux…",
+      "answers": [
+        "Il essaie de vous hypnotiser pour avoir plus de pâtée",
+        "Il s’endort, ce fainéant",
+        "Il vous fait comprendre qu’il vous aime"
+      ],
+      "correct": 2
+    }
+  ]
+}

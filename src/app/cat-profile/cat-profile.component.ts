@@ -1,5 +1,4 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { CookieService } from 'ngx-cookie-service';
 import { DashboardComponent } from '../dashboard/dashboard.component';
 import { CatModel } from '../models/catModel.model';
 import { CookieManager } from '../models/cookieManager';

@@ -1,6 +1,6 @@
 #background {
   width: 100%;
-  height: 935px;
+  height: 700px;
   background-image: url("../../assets/img/paw_background.jpg");
   background-position: top left;
   background-attachment: scroll;
@@ -33,6 +33,7 @@ app-header {
   border-radius: 20px;
   border-style: solid;
   border-width: 1px;
+  margin-top: -4em;
 }
 
 #welcome-text {
@@ -72,6 +73,7 @@ app-header {
   border-radius: 20px;
   border-style: solid;
   border-width: 1px;
+  margin-top: -4em;
 
   display: none;
 }

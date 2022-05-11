@@ -1,9 +1,31 @@
 {
   "_": [
     {
-      "question": "Ca va ?",
-      "answers": ["Oui", "Non", "Je sais pas trop"],
+      "question": "Comment augmenter les chances que son chat soit retrouvé s’il se perd ?",
+      "answers": [
+        "Le faire suivre par un drone",
+        "Lui apprendre à utiliser Google Maps",
+        "Le faire identifier, par puce électronique ou tatouage, et tenir les informations de contact à jour"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Quel est ce chiffre de 11 millions ?",
+      "answers": [
+        "L’estimation du nombre de chats errants ensemble",
+        "Le cout mensuel des croquettes pour le chat de Kim Kardashian",
+        "Le nombre de poils que perd un chat chaque minute"
+      ],
       "correct": 0
+    },
+    {
+      "question": "Que faire si on trouve un chat perdu ?",
+      "answers": [
+        "Poster sur Instagram en espérant que quelqu’un le reconnaisse",
+        "Essayer de le capturer pour l’amener chez un vétérinaire et voir s’il a des propriétaires",
+        "Lui donner une salade verte"
+      ],
+      "correct": 1
     }
   ]
 }

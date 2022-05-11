@@ -1,0 +1,22 @@
+{
+  "_": [
+    {
+      "question": "Comment les associations trouvent-elles des fonds ?",
+      "answers": [
+        "Dons des particuliers et actions diverses",
+        "Spéculation immobilière",
+        "Pas besoin de fonds tout est gratuit"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Si je suis en famille d’accueil, je paie quoi pour le chat ?",
+      "answers": [
+        "Un scooter à ses 16 ans s’il veut se déplacer",
+        "Son inscription en école de commerce",
+        "Rien du tout, l’association prend tout à sa charge"
+      ],
+      "correct": 2
+    }
+  ]
+}

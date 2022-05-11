@@ -1,0 +1,31 @@
+{
+  "_": [
+    {
+      "question": "Dois-je vraiment acheter quatorze fausses souris en feutrine ?",
+      "answers": [
+        "Oui, votre chat l’exige",
+        "Oui, sinon vous devrez aller en chercher des vraies",
+        "Non, le chat apprécie les jouets qui imitent une proie, mais vous pouvez les fabriquer vous-même"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Est-ce que je dois brosser mon chat ?",
+      "answers": [
+        "Non, donnez-lui un peigne, les chats sont indépendants il va se débrouiller",
+        "Oui, sinon les poils morts s’accumulent ",
+        "Oui, pour qu’il reste le plus beau des chats avec sa coiffure magnifique"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Quels sont les objets de base pour mon chat ?",
+      "answers": [
+        "Un bac à litière, de quoi griffer, de quoi dormir, de quoi manger",
+        "Un smartphone, du thon en boite, un cerf-volant",
+        "Un bac à litière, de quoi griffer, des billes pour jouer"
+      ],
+      "correct": 0
+    }
+  ]
+}

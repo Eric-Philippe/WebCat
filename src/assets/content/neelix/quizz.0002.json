@@ -1,0 +1,31 @@
+{
+  "_": [
+    {
+      "question": "Je ne sais pas si je vais savoir m’occuper d’un chat mais je les adore, comment faire ?",
+      "answers": [
+        "Prenez un chat quand même, il y en a plein partout de toute façon",
+        "Devenez famille d’accueil auprès d’une association pour voir si la vie avec un chat vous convient",
+        "N’adoptez jamais de chat"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Pourquoi l’adoption en association n’est pas gratuite ?",
+      "answers": [
+        "Les chats ont déjà reçu des vaccins et des soins, ce sont des frais que vous aurez à faire de toute façon",
+        "Les associations veulent vous arnaquer",
+        "C’est le chat qui fixe son prix"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Une amie me propose un chaton d’une portée que son animal vient d’avoir, je me sens prêt à adopter un chat, que faire ?",
+      "answers": [
+        "S’assurer que le chaton est assez âgé pour être sevré, puis prendre rendez-vous chez un vétérinaire",
+        "Mettre le chat dans votre sac et partir avec",
+        "Dire à votre amie de vous envoyer le chat par la poste"
+      ],
+      "correct": 0
+    }
+  ]
+}

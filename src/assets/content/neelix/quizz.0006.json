@@ -1,0 +1,31 @@
+{
+  "_": [
+    {
+      "question": "Quel type de nourriture est-il recommandé de donner à son chat ?",
+      "answers": [
+        "Des souris récupérées dans le jardin",
+        "Des croquettes et un aliment humide pour l’hydratation",
+        "La même chose que ce que mange son humain"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Pourquoi faut-il un arbre à chat pour les chats vivant en intérieur ?",
+      "answers": [
+        "Pour qu’ils croient qu’ils sont dehors",
+        "Ca ne sert à rien, c’est juste un caprice de chats",
+        "Pour s’y poster en hauteur et y faire les griffes"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "L’herbe dépurative et l’herbe à chats, c’est la même chose ?",
+      "answers": [
+        "Oui, de l’herbe c’est de l’herbe",
+        "Oui, l’une est juste plus fraiche",
+        "Non ; l’une est fraiche et aide le chat à digérer, l’autre est séchée et est euphorisante"
+      ],
+      "correct": 2
+    }
+  ]
+}

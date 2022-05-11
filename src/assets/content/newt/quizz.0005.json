@@ -1,0 +1,31 @@
+{
+  "_": [
+    {
+      "question": "Le chat est un animal qui ...",
+      "answers": [
+        "Boit 5 litres d’eau par jour",
+        "Ne boit que du jus de pommes",
+        "Boit très peu, il faut faire attention à son hydratation"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Tatie Karen vous a offert une superbe plante, que faites-vous ?",
+      "answers": [
+        "Vous cherchez sur internet pour savoir si elle est dangereuse pour votre chat et la mettez en hauteur si nécessaire",
+        "Vous la balancez par la fenêtre en insultant tatie",
+        "Vous la laissez au milieu du salon, votre chat n’est pas idiot"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "le chat peut-il être sujet au stress ?",
+      "answers": [
+        "Non, tous les chats sont zen",
+        "Oui, leur environnement peut les stresser et avoir des conséquences sur leur santé",
+        "Non, ils dorment trop"
+      ],
+      "correct": 1
+    }
+  ]
+}

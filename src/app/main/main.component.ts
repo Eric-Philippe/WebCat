@@ -14,6 +14,7 @@ export class MainComponent implements OnInit {
   stepID!: string;
 
   index = 0;
+  randomInt!: number;
 
   content!: Content;
   quizzs!: Questions[];
@@ -34,9 +35,13 @@ export class MainComponent implements OnInit {
     await this.query_content(this.catName, this.stepID);
     if (this.content.quizz) {
       await this.query_quizz(this.catName, this.stepID);
+      this.randomInt = this.randomIntGenerator(this.quizzs.length);
     }
-    this.createContentContainer();
-    this.addText(this.content.text[0], '#container' + this.index);
+    for (let i = 0; i < this.content.text.length; i++) {
+      this.createContentContainer(i);
+      this.addText(this.content.text[i], '#container' + i);
+    }
+
     this.createButton();
   }
 
@@ -60,7 +65,6 @@ export class MainComponent implements OnInit {
       let document = await import(
         '../../assets/content/' + name.toLowerCase() + '/quizz.' + id + '.json'
       );
-      console.log(document._);
       this.quizzs = document._;
     } catch (e) {
       console.log(e);
@@ -68,9 +72,9 @@ export class MainComponent implements OnInit {
   }
 
   // Create a new container in the main-container
-  createContentContainer(): void {
+  createContentContainer(i: number): void {
     const divContainer = this.renderer.createElement('div');
-    this.renderer.setProperty(divContainer, 'id', 'container' + this.index);
+    this.renderer.setProperty(divContainer, 'id', 'container' + i);
     this.renderer.addClass(divContainer, 'container');
     let element = document.querySelector('#main-container');
     this.renderer.appendChild(element, divContainer);
@@ -120,7 +124,6 @@ export class MainComponent implements OnInit {
 
   addText(txt: string, elementID: string) {
     let element = document.querySelector(elementID);
-    console.log(element);
     if (!element) return;
 
     element.innerHTML += txt;
@@ -142,5 +145,10 @@ export class MainComponent implements OnInit {
       this.cookie.add(2);
       alert('Vous avez gagné deux friandises !');
     }
+  }
+
+  // Random Int generator
+  randomIntGenerator(max: number): number {
+    return Math.floor(Math.random() * Math.floor(max));
   }
 }

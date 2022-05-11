@@ -1,0 +1,22 @@
+{
+  "_": [
+    {
+      "question": "Pourquoi les chats sont un danger pour la faune ?",
+      "answers": [
+        "Ils entrainent les souris à se battre pour eux",
+        "Ils construisent des barrages à lézards",
+        "Ils tuent de très nombreux oiseaux"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Qu’est-ce qui transmet la maladie de Lyme ?",
+      "answers": [
+        "Les tiques qui piquent les chats",
+        "Les griffures de chats",
+        "Les miaulements des chats"
+      ],
+      "correct": 0
+    }
+  ]
+}

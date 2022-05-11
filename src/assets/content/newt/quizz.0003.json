@@ -1,0 +1,31 @@
+{
+  "_": [
+    {
+      "question": "Dans une journée, quelle est l’activité qui prend le plus de temps à un chat ?",
+      "answers": [
+        "Comploter pour conquérir le monde",
+        "Enfiler des perles",
+        "Se reposer"
+      ],
+      "correct": 2
+    },
+    {
+      "question": "Les chats aiment-ils se promener ?",
+      "answers": [
+        "Oui, ils se déplacent sur leur territoire",
+        "Non, ils restent dans leur chambre à jouer aux jeux vidéo",
+        "Oui, ils partent en randonnée raquette dans les Alpes"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Que font les chats quand ils jouent ?",
+      "answers": [
+        "Ils jouent à la belote",
+        "Ils imitent la chasse",
+        "Ils jouent au rugby"
+      ],
+      "correct": 1
+    }
+  ]
+}

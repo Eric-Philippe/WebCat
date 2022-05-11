@@ -1,0 +1,31 @@
+{
+  "_": [
+    {
+      "question": "Les chats aiment-ils être en hauteur ?",
+      "answers": [
+        "Non ils ont le vertige",
+        "Oui, pour surveiller leur territoire",
+        "Oui, pour s’entrainer à voler"
+      ],
+      "correct": 1
+    },
+    {
+      "question": "Le chat ne dort pas tout le temps dans son panier, c’est normal ?",
+      "answers": [
+        "Oui, les chats ont différents endroits pour se reposer et dormir",
+        "Non, il faut le déplacer et le remettre dans son panier quand il n’y est pas",
+        "Non, car c’est un ingrat qui préfère dormir dans un sac de courses"
+      ],
+      "correct": 0
+    },
+    {
+      "question": "Pourquoi acheter une fontaine à eau ?",
+      "answers": [
+        "Pour le joli bruit d’eau qui coule qu’elle produit",
+        "Pour avoir un objet de plus pour décorer la maison",
+        "Pour inciter le chat à boire car ils aiment l’eau courante"
+      ],
+      "correct": 2
+    }
+  ]
+}
