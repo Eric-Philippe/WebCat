@@ -1,12 +1,10 @@
 #background {
   width: 100%;
-  min-height: 658px;
   background-image: url("../../assets/img/paw_background.jpg");
   background-position: top left;
-  background-attachment: scroll;
   animation: mymove 10s infinite;
-  min-height: 100%;
   height: auto;
+  min-height: 100%;
   position: fixed;
   background-size: cover;
   z-index: -1;
