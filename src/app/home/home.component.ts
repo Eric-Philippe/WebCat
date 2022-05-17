@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   constructor(private cookieService: CookieService) {}
   heads = [
     { name: 'accueil', path: '/' },
-    { name: 'about us', path: '/us' },
+    { name: 'Nous', path: '/us' },
   ];
 
   mimi!: Card;
